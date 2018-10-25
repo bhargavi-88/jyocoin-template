@@ -1,0 +1,118 @@
+/*footer*/
+  .text_media {
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    color: #ecb93d;
+
+  }
+  .text_content_media {
+    color: #bfc6cd;
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+
+  }
+  .border_tb {
+    border-top: 1px solid #505357;
+    border-bottom: 1px solid #505357;
+  }
+  .border_rght {
+    border-right: 1px solid #505357;
+  }
+
+  .joy_text {
+    font-size: 30px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 900;
+    color: #ecb93d;
+    /*margin:12px 0;*/
+  }
+  .content_footer_text {
+
+    font-size: 16px;
+    color: #bfc6cd;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: justify;
+    line-height: 30px;
+  }
+  .text_heading {
+    font-size: 30px;
+    color: #a0a7ad;
+    font-family: 'Fira Sans', sans-serif;
+  }
+  .text_informtn {
+    font-size: 16px;
+    color: #bfc6cd;
+    font-family: 'Fira Sans', sans-serif;
+    cursor: pointer;
+  }
+  .input_padng {
+
+    /*padding: 15px 125px 15px 21px;*/
+    color: #72767a;
+    background-color: #293543;
+    outline: none;
+    border: none;
+    /*border-radius: 5px;*/
+  }
+  .bg_copyrght {
+    background-color: #141a21;
+  }
+  .jyo_text {
+    color: #c69c37;
+    font-weight: 700;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 24px;
+
+  }
+
+  .font_facebook {
+    background-color: #a8afb5;
+    padding: 10px 16px;
+    border-radius: 50%;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+.font_twitter{
+  background-color: #a8afb5;
+  padding: 10px 14px;
+  border-radius: 50%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+  .input-imagecolor
+  {
+    background-color: #ecb93d;
+    outline: none;
+    border:none;
+  }
+  .spacing_top{
+    margin-top: 150px;
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    .input_padng {
+      padding: 15px 70px 15px 21px;
+    }
+  }
+
+  .font_bg:hover{
+    background-color: #fff;
+    color: #3B5998;
+  }
+
+  @media(min-width:576px) and (max-width:991px){
+    .border_rght {
+      border-right: none;
+    }
+  }
+
+@media(min-width:320px) and (max-width:767px){
+  .top_icons{
+    margin-top: 15px;
+  }
+}
+
+.form-control:focus{
+  box-shadow:none !important;
+}
+

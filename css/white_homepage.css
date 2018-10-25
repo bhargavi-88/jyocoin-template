@@ -1,0 +1,360 @@
+#nav_white_homepage{
+  background-image:url("../images/Jyo website_header.PNG");
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.prtl_text1{
+  color: #ecb93d;
+  font-size:18px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+}
+
+.padng_tb{
+  padding: 90px 0;
+}
+
+.header_partl{
+  color: #fff;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.dummy_text{
+
+  color: #fff;
+  font-size:16px;
+  font-family: 'Work Sans', sans-serif;
+  text-align:justify;
+}
+.margn_adjust_space{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn_join{
+  color: #101010;
+  background-color: #ecb93d;
+  font-size: 18px;
+  font-family: 'Work Sans', sans-serif;
+  padding: 18px 65px;
+  border:none;
+  outline:none;
+  margin-bottom: 60px;
+
+}
+
+
+
+
+
+
+  .text {
+    color: #bfc6cd;
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+
+  }
+  .bg1 {
+    background-color: #293543;
+    padding: 43px 99px;
+  }
+  @media(min-width: 320px) and (max-width: 575px) {
+    .pl_0 {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .cointext {
+
+      font-size: 65px;
+    }
+    .icons_text {
+      padding: 35px !important;
+    }
+    .bg1 {
+
+      padding: 43px;
+    }
+
+  }
+  .icons_text {
+
+    background-color: #ecb93d;
+    color: #252525;
+    padding: 34px 102px;
+  }
+  .pl_0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .exchange_btn{
+    background-color: #ecb93d;
+    padding: 16px 50px;
+    color: #161d24;
+    border: none;
+    outline: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    border-radius:4px;
+  }
+  .input_bdr{
+    border:1px solid #ecb93d;
+    box-shadow: 0 0 0 0 #fff !important;
+    color: #505050;
+    font-size: 14px;
+    font-family: 'Work Sans', sans-serif;
+    padding: 15px 20px;
+
+  }
+
+  .card {
+    background-color: #293543 !important;
+    border: none !important;
+    border-radius: 0 !important;
+  }
+  .title {
+
+    color: #bfc6cd;
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+  }
+
+  .content {
+    color: #6b7682;
+    font-size: 14px;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+
+  }
+  .btn_yellow {
+    background-color: #ecb93d;
+    padding: 18px 50px;
+    color: #161d24;
+    border: none;
+    outline: none;
+    /*letter-spacing: 3px;*/
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+  }
+  .card-body {
+    padding: 3rem !important;
+    border-radius: 0 !important;
+  }
+  .card-title {
+    margin-bottom: 1rem !important;
+    margin-top: 1rem;
+  }
+
+  .spacing_top {
+
+    margin-top: 150px;
+  }
+
+  .section3_img{
+    background-image: url("../images/bg Image.PNG");
+    background-size: cover;
+  }
+
+  .header_currency{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    color: #fff;
+
+  }
+  .currency_text{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    color: #fff;
+  }
+  .paddng_adjust{
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  
+
+
+  .text_jyo{
+    font-size: 24px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight:700;
+    color: #ebb83d;
+
+  }
+  .date_text{
+    color:#727e8a;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
+
+  }
+  .lorem_text{
+    font-size:14px;
+    font-family: 'Work Sans', sans-serif;
+    color: #727e8a;
+
+  }
+  .lorem_color{
+    font-size:14px;
+    font-family: 'Work Sans', sans-serif;
+    color: #ebb83d;
+    
+  }
+  .spacing_top1{
+    margin-top:70px;
+    margin-bottom:70px;
+  }
+
+  .road_text{
+    font-size:40px;
+    font-family: 'Work Sans', sans-serif;
+    color: #141414;
+
+  }
+
+  .bx_shdw{
+    background-color: #fff;
+    padding-bottom: 30px;
+    box-shadow: 0px 2px 30px 10px #8799a347;
+    margin-top: -56px;
+  }
+
+
+
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    /*background-color: white;*/
+    background-color:  #474e5d;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  /* Container around content */
+  .container1 {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  /* The circles on the timeline */
+  .container1::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -12px;
+    background-color: white;
+    border: 2px solid #474e5d;
+    top: 38%;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 38%;
+    width: 0;
+    z-index: 1;
+    right: 23px;
+    border: medium solid white;
+    border-width: 17px 0 17px 17px;
+    border-color: transparent transparent transparent  #fff;
+  }
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 38%;
+    width: 0;
+    z-index: 1;
+    left: 23px;
+    border: medium solid white;
+    border-width: 17px 17px 17px 0;
+    border-color: transparent  #fff transparent transparent;
+  }
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -14px;
+  }
+  /* The actual content */
+  .content1 {
+    padding: 35px;
+    background-color:  #fff;
+    position: relative;
+    border-radius: 6px;
+    box-shadow:-2px -3px 96px rgba(165, 165, 165, 0.45098039215686275);
+  }
+  .ts-1{
+    font-size: 18px;
+    color: rgba(236, 185, 61, 255);
+  }
+  .ts-2{
+    font-size: 18px;
+    color: rgba(149, 149, 149, 255);
+  }
+  .ts-3{
+    font-size: 18px;
+    color: rgba(191, 198, 205, 255);
+  }
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+
+    /* Full-width containers */
+    .container1 {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .container1::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+      left: 15px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+
+  
+  
+  
+  
+  
+}
+

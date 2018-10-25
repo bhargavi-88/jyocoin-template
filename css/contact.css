@@ -1,0 +1,110 @@
+body{
+  font-family: 'Fira Sans', sans-serif;
+}
+
+  .heading_text {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 45px;
+    color: #bfc6cd;
+  }
+  .headng_content {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    color: #bfc6cd;
+    //line-height: 35px;
+  }
+  .content_text{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    color: #525e6a;
+  }
+
+
+
+
+  .input_padng1{
+    padding: 20px 28px 20px 28px;
+    background-color: transparent;
+    border: 2px solid #1c252f;
+  }
+
+  .form-control {
+
+    border-radius: 0 !important;
+  }
+  .form-control:focus{
+      box-shadow:0 0 0 0 #fff !important;
+    }
+
+
+  .input_padng1:focus{
+    background-color: #1c252f;
+    border: 1px solid rgba(191, 198, 205, 0.27);
+  }
+
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    color: #bfc6cd;
+  }
+  .bg_backgrnd{
+    background-color: #293543;
+    padding: 3rem;
+
+  }
+  .img_text{
+    position: relative;
+    top: -75%;
+  }
+
+
+  .adjust_top{
+    margin-top: -20rem;
+  }
+
+  @media(min-width:320px) and (max-width:767px){
+    .adjust_top{
+      margin-top: 0rem;
+    }
+    .bg_backgrnd {
+      background-color: #293543;
+      padding: 3rem;
+      //margin-top: -4rem;
+      //margin-left: 0rem;
+    }
+    .img_text {
+      position: relative;
+      top: -40%;
+    }
+  }
+
+  @media(min-width:768px) and (max-width:991px){
+    .bg_backgrnd {
+      background-color: #293543;
+      padding: 3rem;
+      //margin-top: -10rem;
+      //margin-left: 6.5rem;
+    }
+  }
+  .font_icon{
+    font-size: 20px;
+    color: #293543;
+    background-color: #161d24;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .font_icon:hover{
+    background-color: #fff;
+  }
+  .font_icon1{
+    font-size: 20px;
+    color: #293543;
+    background-color: #161d24;
+    padding: 10px 17px;
+    border-radius: 50px;
+  }
+  .font_icon1:hover{
+    background-color:#fff;
+  }

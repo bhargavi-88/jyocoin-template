@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" id="fav_icon" href="images/logo.png">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:500|family=Poiret+One:400">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,600,700,800,900">
+    <title> Index | JYOCOIN</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/homepage.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link href="css/jquery.roadmap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+    <link rel="stylesheet" href="css/hover-min.css">
+    <style>
+         .roadmap__events:after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: #727e8a;
+    border-radius: 2px;
+    -webkit-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    transition: all .5s linear;
+  }
+
+  .roadmap__events__event:after, .roadmap__events__event:before {
+    position: absolute;
+    content: "";
+    display: block;
+    color: #727e8a !important;
+    -webkit-transition: all .3s cubic-bezier(.25,.1,.25,1.3);
+    -o-transition: all .3s cubic-bezier(.25,.1,.25,1.3);
+    transition: all .3s cubic-bezier(.25,.1,.25,1.3);
+  }
+  .roadmap__events__event{
+    height: 261px;
+  }
+  .roadmap__events__event:nth-child(odd):before {
+    top: -19px;
+  }
+  .roadmap__events__event:nth-child(even):after {
+    bottom: -1px;
+  }
+
+  .roadmap__events__event:after {
+    width: 1px;
+    height: 0;
+    border-radius: 2px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .roadmap__events__event:after, .roadmap__events__event:before {
+    position: absolute;
+    content: "";
+    display: block;
+    color: #727e8a;
+    /* background-color: transparent;*/
+    -webkit-transition: all .3s cubic-bezier(.25,.1,.25,1.3);
+    -o-transition: all .3s cubic-bezier(.25,.1,.25,1.3);
+    transition: all .3s cubic-bezier(.25,.1,.25,1.3);
+  }
+
+  .roadmap__events__event .event .event__date {
+    font-weight: 600;
+    margin-left: -12px;
+  }
+
+  .roadmap__events__event .event .event__date {
+    font-weight: 600;
+    margin-left: -12px;
+    color: #ecb93d;
+  }
+  .roadmap__events__event .event{
+
+    color:#bfc6cd;
+    font-size: 18px;
+  }
+  .roadmap__events__event:before{
+    background-color: transparent;
+    border:1px solid #727e8a;
+  }
+  .roadmap__events__event:after{
+    background-color: #727e8a;
+  }
+  .roadmap__events__event:nth-child(even):before{
+    bottom: -20px;
+  }
+  .roadmap__events__event:nth-child(odd) .event {
+    top: 120px;
+    left: 120px;
+  }
+  .roadmap__events__event:nth-child(even) .event {
+    bottom: 120px;
+    right: 80px;
+  }
+  .roadmap__navigation>* a {
+    display: block;
+    color: #727e8a;
+    line-height: 0;
+    border: 1px solid #727e8a;
+    border-radius: 50%;
+    padding: 10px 20px;
+  }
+  .roadmap__navigation>* a i {
+    font-size: 30px;
+  }
+  @media(min-width:993px) and (max-width:1300px){
+    .roadmap__events__event:nth-child(even) .event {
+      bottom: 155px;
+      right: 120px;
+    }
+  }
+  @media (min-width:768px) and (max-width:992px) {
+    .roadmap.roadmap--initialized .roadmap__events .roadmap__events__event:before
+    {
+      -webkit-transform: scale(1) translateX(160%) !important;
+
+    }
+
+    .roadmap
+    {
+      max-width: 730px;
+    }
+    .roadmap__events__event:nth-child(even):before
+    {
+      left:52.5%;
+    }
+    .roadmap__events__event:nth-child(odd):before {
+      top: -8px;
+      left: 33%;
+    }
+
+  }
+  @media (min-width:576px) and (max-width:767px) {
+    .roadmap.roadmap--initialized .roadmap__events .roadmap__events__event:before
+    {
+      -webkit-transform: scale(1) translateX(160%) !important;
+
+    }
+
+    .roadmap
+    {
+      max-width: 530px;
+    }
+    .roadmap__events__event:nth-child(even):before
+    {
+      left:50.2%;
+    }
+    .roadmap__events__event:nth-child(odd):before
+    {
+      top: -8px;
+
+      left: 30%;
+    }
+    .roadmap.roadmap--initialized .roadmap__events .roadmap__events__event:after
+    {
+      width:35px;
+    }
+  }
+  @media (min-width:320px) and (max-width:575px) {
+    .roadmap
+    {
+      max-width: 300px;
+    }
+    .roadmap__events__event:nth-child(odd):before
+    {
+      position: relative;
+      left: -15px !important;
+      top: -8px;
+    }
+    .roadmap__events__event:nth-child(even):before
+    {
+      left:71.5%;
+    }
+    .roadmap.roadmap--initialized .roadmap__events .roadmap__events__event:after
+    {
+      width:85px;
+    }
+    .roadmap.roadmap--initialized .roadmap__events .roadmap__events__event:before
+    {
+      -webkit-transform: scale(1) translateX(160%) !important;
+
+    }
+
+  }
+  @media (min-width:320px) and (max-width:992px) {
+
+    .roadmap__events__event .event {
+      position: initial;
+    }
+
+    .material-icons {
+      display: none;
+    }
+
+    .roadmap__events__event:nth-child(odd):before {
+      top: -8px;
+      /*left: 33%;*/
+    }
+
+    .roadmap__events__event:nth-child(even) .event {
+      /* bottom: 80px; */
+      /* right: 120px; */
+      margin-left: auto;
+      /* margin-top: -10px; */
+    }
+
+    .fa-angle-right{
+
+      display:none;
+    }
+    .roadmap__navigation>* a{
+        border:none;
+    }
+    .roadmap .roadmap__events__event .event{
+        padding-top: 15px;
+    }
+
+  }
+
+        body {
+
+            background-color: #161d24 !important;
+            overflow-x: hidden;
+        }
+
+        .navbar-home {
+            background-color: #293543 !important;
+            -webkit-animation: fadeInDown 1s both;
+            animation: fadeInDown 1s both;
+            box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.16);
+            transition: all 0.5s linear;
+            margin-top: 0 !important;
+        }
+        #return-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 44px;
+            display: block;
+            text-decoration: none;
+            z-index: 9999;
+            transition: all 0.3s ease;
+        }
+        .clr_change{
+            color: #fff;
+            font-size: 20px;
+            border: 1px solid #fff;
+            padding: 10px;
+            border-radius: 20px;
+        } 
+    .animated {
+    animation-duration:.6s;
+
+    }
+    .height_adjust{
+        height: 70px;
+    }
+
+ .widget-holder {
+  visibility: hidden;
+  opacity: 0;
+  padding: 20px;
+  transition: all .3s;
+  position: absolute;
+  top: 44px;
+  margin-top: 0;
+  right: 19px;
+  width: 300px;
+  background: #fff;
+  border-radius: 11px;
+  box-shadow: 0 10px 90px 0 rgba(0, 0, 0, 0.07);
+  z-index: 999; 
+}
+
+.widget-holder form {
+  margin: 0;
+  padding: 0; 
+}
+
+.ajax-search-form {
+  position: relative; 
+}
+
+.input_adjust {
+  font-size: 14px;
+  line-height: 20px;
+  color: #8799a3;
+  background-color: #fff;
+  transition: all 300ms;
+  padding: 15px 28px;
+  border: 1px solid  #eceef2;
+  outline: none;
+  font-family: 'Work Sans', sans-serif; 
+}
+
+.input_adjust:focus {
+  border: 2px solid  #eceef2 !important; 
+}
+
+.widget-holder.show {
+  opacity: 1;
+  visibility: visible; 
+}
+
+.widget-holder {
+  opacity: 0;
+  visibility: hidden; 
+}
+
+@media (max-width: 991px) {
+  .widget-holder {
+    top: 7px; 
+}
+  .widget-holder.show {
+    position: relative !important;
+    top: 15px;
+    left: -7px; 
+}
+     }
+
+.display_cancel {
+  display: block !important; 
+}
+
+.search-close {
+  position: absolute;
+  top: 30%;
+  right: 15px;
+  color: #f04e4e;
+  display: none;
+  cursor: pointer; 
+}
+
+/*preloader*/
+.preloader {
+  height: 95vh;
+  width: 95vw;
+  overflow: hidden;
+  position: fixed;
+  background-color: white;
+  z-index: 9999999;
+  height: 100%;
+  width: 100%; }
+
+.loader {
+  height: 20px;
+  width: 250px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+.loader--dot {
+  animation-name: loader;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: black;
+  position: absolute;
+  border: 2px solid white; }
+
+.loader--dot:first-child {
+  background-color: #8cc759; }
+
+.loader--dot:nth-child(2) {
+  background-color: #8c6daf;
+  animation-delay: 0.4s; }
+
+.loader--dot:nth-child(3) {
+  background-color: #ef5d74;
+  animation-delay: 0.3s; }
+
+.loader--dot:nth-child(4) {
+  background-color: #f9a74b;
+  animation-delay: 0.2s; }
+
+.loader--dot:nth-child(5) {
+  background-color: #60beeb;
+  animation-delay: 0.1s; }
+
+.loader--dot:nth-child(6) {
+  background-color: #fbef5a;
+  animation-delay: 0s; }
+
+.loader--text {
+  position: absolute;
+  top: 200%;
+  left: 0;
+  right: 0;
+  width: 4rem;
+  margin: auto; }
+
+.loader--text:after {
+  content: "Loading";
+  font-weight: bold;
+  animation-name: loading-text;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; }
+
+@keyframes loader {
+  15% {
+    transform: translateX(0); }
+  45% {
+    transform: translateX(230px); }
+  65% {
+    transform: translateX(230px); }
+  95% {
+    transform: translateX(0); } }
+
+@keyframes loading-text {
+  0% {
+    content: "Loading"; }
+  25% {
+    content: "Loading."; }
+  50% {
+    content: "Loading.."; }
+  75% {
+    content: "Loading..."; } }
+    </style>
+</head>
+<!--content-->
+<body class="up1 is-smooth-effect no-touch loaded">
+  <div class="preloader">
+    <div class="loader">
+        <div class="loader--dot"></div>
+        <div class="loader--dot"></div>
+        <div class="loader--dot"></div>
+        <div class="loader--dot"></div>
+        <div class="loader--dot"></div>
+        <div class="loader--dot"></div>
+        <div class="loader--text"></div>
+    </div>
+</div>
+<!-- <div id="particles-js"></div> -->
+<section >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand animated slower fadeInDown" data-animate="fadeInDown" data-delay=".85" href="#"><img src="images/Logo.png" alt="missing image">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse animated slower fadeInDown" data-animate="fadeInDown" data-delay="1.03s" id="navbarNav" >
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="overview.html">OVERVIEW</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="images/search.png" alt="missing image" class="search-toggler"></a>
+                         <div class="widget-holder">
+                    <form class="search-form ajax-search-form">
+                        <input class="form-control input_adjust" data-min-chars="3" type="search" name="s" placeholder="Start typing to search...">
+                        <span><i class="fa fa-times search-close"></i></span>
+                    </form>
+                </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</section>
+<div class="container spacing_top ">
+    <div class="row">
+        <div class="col-lg-6 col-12 col-md-12 m_top">
+            <div class="firsttext animated slower fadeInUp" data-animate="fadeInUp" data-delay="2.25">Are you want to grow your business</div>
+            <div class="cointext animated slower fadeInUp" data-animate="fadeInUp" data-delay="2.95" id="hero">JYOCOIN</div>
+            <div class="paratext animated slower fadeInUp" data-animate="fadeInUp" data-delay="3.45">Is super-easy to use and completely anonymous cryptocurrency with ~0 fee, fast transactions & big plans for the future</div>
+            <button class="button_yellow animated slower fadeInUp" data-animate="fadeInUp" data-delay="3">JOIN US</button>
+        </div>
+        <div class="col-lg-6 col-12 col-md-12 animated slower fadeIn" data-wow-delay="0.3s">
+            <img src="images/joyCoin.png" class="img-fluid" alt="missing image">
+        </div>
+    </div>
+</div>
+<!-- end of section1 -->
+<!-- sction2 -->
+<div class="container spacing_top wow slow fadeIn">
+    <div class="row">
+        <div class="col-lg-6  col-12 col-md-6 pl_0">
+            <div class="bg1">
+                <div class="text">
+                    To start using just download
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6  col-12 col-md-6 pl_0">
+            <div class="icons_text">
+                Wallet for
+                <img src="images/windows.png" class="pl-lg-4 ml-2" alt="missing image">
+                <img src="images/linux.png" class="pl-lg-4 ml-1" alt="missing image">
+                <img src="images/mac.png" class="pl-lg-4 ml-1" alt="missing image">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of section2 -->
+<!-- section4 -->
+<div class="container spacing_top">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-12 my-3 wow slow fadeInUp" data-wow-delay="0.5s">
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-center">
+                        <img src="images/bitcoin1.png" alt="missing image"></div>
+                    <div class="card-title text-center title">Tech overview</div>
+                    <div class="card-text content my-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</div>
+                    <button class="btn_yellow">More on Discord</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 my-3 wow slow fadeInUp" data-wow-delay="0.6s">
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-center">
+                        <img src="images/bitcoin2.png" alt="missing image"></div>
+                    <div class="card-title text-center title">Mining</div>
+                    <div class="card-text content my-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</div>
+
+                    <button class="btn_yellow">Discuss on Telegram</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 my-3 wow slow fadeInUp" data-wow-delay="0.7s">
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-center">
+                        <img src="images/bitcoin3.png" alt="missing image"></div>
+
+                    <div class="card-title text-center title">Exchanges</div>
+                    <div class="card-text content my-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</div>
+
+                    <button class="btn_yellow">More on Bitcointalk</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- slicker -->
+<div class="container spacing_top ">
+    <div class="col-12">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide wow slow fadeInUp">
+                    <div class="row">
+                        <div class="col-lg-6 col-12 col-md-6 align-self-center">
+                            <div class="swiper_bg">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12 col-md-6">
+                            <div class="swiper-second-half">
+                                <div class="swiper_heading">The most decentralized currency
+                                </div>
+                                <div class="swiper_content my-3">We eradicate a single point of failure by keeping an immutable and distributed track of the node list thanks to IPFS while ZeroNet offers a decentralized interface to this storage.</div>
+                                <button class="button_yellow my-4">JOIN US</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide wow slow fadeInUp">
+                    <div class="row">
+                        <div class="col-lg-6 col-12 col-md-6">
+                            <div class="swiper_bg">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12 col-md-6">
+                            <div class="swiper-second-half">
+                                <div class="swiper_heading">The most decentralized currency
+                                </div>
+                                <div class="swiper_content my-3">We eradicate a single point of failure by keeping an immutable and distributed track of the node list thanks to IPFS while ZeroNet offers a decentralized interface to this storage.</div>
+                                <button class="button_yellow my-4">JOIN US</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide wow slow fadeInUp">
+                    <div class="row">
+                        <div class="col-lg-6 col-12 col-md-6">
+                            <div class="swiper_bg">
+                            </div>
+                        </div>
+                        <div class="col-lg-16 col-12 col-md-6">
+                            <div class="swiper-second-half">
+                                <div class="swiper_heading">The most decentralized currency
+                                </div>
+                                <div class="swiper_content my-3">We eradicate a single point of failure by keeping an immutable and distributed track of the node list thanks to IPFS while ZeroNet offers a decentralized interface to this storage.</div>
+                                <button class="button_yellow my-4">JOIN US</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination my-3"></div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- end of slicker section -->
+<!--timeline-->
+
+<div class="container spacing_top">
+    <div class="col-12">
+        <div class="text-center clr_heading wow slow fadeInUp">
+            OUR ROADMAP
+        </div>
+        </div>
+    </div>
+   <div id="my-timeline" class="wow slow fadeInUp"></div>
+ 
+
+
+<!--end of timeline-->
+
+
+<!-- end of section4 -->
+<div class="container spacing_top">
+    <div class="row">
+        <div class="col-12">
+            <div class="text_heading1 my-2">LATEST NEWS</div>
+        </div>
+        <div class="col-lg-6 my-5 wow slower fadeInUp" data-animate="fadeInUp">
+            <img src="images/Latestnews1.PNG" class="img-fluid " alt="missing image">
+            <div class="row wow slow fadeInUp" data-wow-duration="2s">
+                <div class="col-lg-12 my-3">
+                    <p class="jyo_text">JYO</p>
+                </div>
+                <div class="col-lg-10">
+                    <p class="time_text">1:50 PM - 28 Jun 2018</p>
+                </div>
+                <div class="col-lg-2">
+                    <img src="images/heart.png" alt="missing image" class="ml-2 hvr-pulse">
+                    <img src="images/sendshare.png" alt="missing image" class="ml-2 hvr-shrink">
+                </div>
+                <div class="col-12">
+                    <span class="text_dummy">Lorem Ipsum is simply</span> <span class="inner_content">dummy text of the printing and typesetting industry.  Lorem Ipsum  has  been the industry's standard dummy text ever since the 1500s, when an unknown printer took  a  galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-6 mrgn_minus wow slower fadeInUp" data-animate="fadeInUp">
+            <img src="images/Latestnews2.png" class="img-fluid " alt="missing image">
+            <div class="row wow slow fadeInUp" data-wow-duration="2s">
+                <div class="col-lg-12 my-3">
+                    <p class="jyo_text">JYO</p>
+                </div>
+                <div class="col-lg-10">
+                    <p class="time_text">1:50 PM - 28 Jun 2018</p>
+                </div>
+                <div class="col-lg-2">
+                    <img src="images/heart.png" alt="missing image" class="ml-2 hvr-pulse">
+                    <img src="images/sendshare.png" alt="missing image" class="ml-2 hvr-shrink">
+                </div>
+                <div class="col-12">
+                    <span class="text_dummy">Lorem Ipsum is simply</span> <span class="inner_content">dummy text of the printing and typesetting industry.  Lorem Ipsum  has  been the industry's standard dummy text ever since the 1500s, when an unknown printer took  a  galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+                <div class="col-12 my-4">
+                    <a  href="latest_news.html" class="button_yellow ml-auto">All Posts</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--footer section-->
+
+
+<div class="border_tb spacing_top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-12 border_rght">
+                <div class="row my-4 mx-auto">
+                    <div class="col-lg-2 col-md-2 col-12 hvr-icon-spin ">
+                        <img src="images/message.png" alt="missing image" class="hvr-icon">
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-12 top_icons"><span class="text_media">Email:</span><span class="text_content_media ml-2">inquiry@jyocoin.com</span></div>
+                </div>
+
+
+            </div>
+            <div class="col-lg-4 col-12 border_rght">
+                <div class="row my-4 mx-auto">
+                    <div class="col-lg-2 col-md-2 col-12  hvr-icon-spin ">
+                        <img src="images/phone.png" alt="missing image" class=" hvr-icon">
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-12 top_icons"><span class="text_media">Call:</span> <span class="text_content_media ml-2">0123 456 789</span></div>
+                </div>
+
+
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="row my-4 mx-auto">
+                    <div class="col-lg-2 col-md-2 col-12  hvr-icon-spin ">
+                        <img src="images/location.png" alt="missing image" class=" hvr-icon">
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-12 top_icons"><span class="text_media">Address:</span><span class="text_content_media ml-2">Suite 20 Bitcoin Street.</span></div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <a href="#" id="return-to-top">
+            <i class="fa fa-arrow-up clr_change single_angle-upicon"></i>
+        </a>
+    </div>
+</div>
+<div class="container my-4 ">
+    <div class="row">
+        <div class="col-lg-4 col-12">
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/footer_logo.png" alt="missing image">
+                </div>
+                <div class="col-8 my-2">
+                    <div class="joy_text wow slow fadeInUp" data-delay="2s">Jyo coin</div>
+                </div>
+            </div>
+            <div class=" content_footer_text my-3 wow slow fadeInUp" data-delay="3s">
+                Lorem  ipsum  dolor  sit amet consectetur adipisicing elit. Quaerat rerum doloremque totam culpa eius distinctio laudantium architectorepellat  sed  deleniti,  ullam quisquam  nobis  placeat nisi.
+            </div>
+
+        </div>
+        <div class="col-lg-4 col-12">
+            <div class="pl-lg-5">
+                <div class="text_heading  my-2 wow slow fadeInUp" data-delay=".5">Information</div>
+                <div class="text_informtn  wow slow fadeInUp" data-delay=".6">Payment Option</div>
+                <br>
+                <div class="text_informtn  wow slow fadeInUp" data-delay=".7">How It Work</div>
+                <br>
+                <div class="text_informtn  wow slow fadeInUp" data-delay=".8">Master Card Verification Guide</div>
+                <br>
+                <div class="text_informtn  wow slow fadeInUp" data-delay=".9">Developer Platform Guide</div>
+                <br>
+                <div class="text_informtn  wow slow fadeInUp" data-delay="1.0"> Bitcoin Earn</div>
+                <br>
+                <div class="text_informtn  wow slow fadeInUp" data-delay="1.1">Buy & Sell Digital Currency</div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4 col-12 my-lg-0 my-sm-3 my-3">
+            <div class="text_heading my-2">Newsletter</div>
+            <div class=" content_footer_text my-3 wow slow fadeInUp">Lorem  ipsum  dolor  sit amet consectetur adipisicing elit. Quaerat rerum doloremque totam culpa eius distinctio laudantium architectorepellat  sed  deleniti,  ullam quisquam  nobis  placeat nisi.</div>
+            <div class="input-group wow slow fadeInUp">
+                <input type="text" class="form-control input_padng" placeholder="Email Address"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <div class="input-group-append ">
+                    <span class="input-group-text input-imagecolor" id="inputGroup-sizing-sm"> <img src="images/send.png" alt="missing image" class="input-group-append"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="container-fluid bg_copyrght">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-12 col-sm-6 my-3">
+                <div class="text_informtn my-3 wow slow fadeInUp">Copyright &copy; 2018,Lorvent.</div>
+            </div>
+            <div class="col-lg-6 col-12 col-sm-6 my-3  text-lg-right text-md-right text-sm-right">
+                <span class="font_facebook hvr-icon-spin wow slow fadeInUp" data-wow-duration="1.s"><i class="fa fa-facebook hvr-icon"></i></span>
+                <span class="font_twitter hvr-icon-spin ml-lg-1 wow slow fadeInUp" data-wow-duration="2.5s"><i class="fa fa-twitter  hvr-icon"></i></span>
+                <span class="font_twitter hvr-icon-spin ml-lg-1 wow slow fadeInUp" data-wow-duration="3.5s"><i class="fa fa-github  hvr-icon"></i></span>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.roadmap.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script type="text/javascript">
+    
+    $(document).ready(function(){
+
+         var events = [
+                {
+                    date: 'January 2018',
+                    content: 'Difficulty Alogrithm Change'
+                },
+                {
+                    date: 'January 2018',
+                    content: 'White Paper Release'
+                },
+                {
+                    date: 'January 15 2018',
+                    content: 'Lorem ipsum dolor'
+                },
+                {
+                    date: 'Q3 2018',
+                    content: 'Wallet & Miner'
+                },
+                {
+                    date: 'Q2 2018',
+                    content: 'ZeroNet & IPFS'
+                },
+                {
+                    date: 'January 2018',
+                    content: 'GUI Wallet Release'
+                },
+                {
+                     date: 'Q4 2018',
+                    content: 'To Be Announced + Community Wishes'
+                },
+                {
+                    date: 'January 2018',
+                    content: 'Difficulty Alogrithm Change'
+                },
+                {
+                    date: 'January 2018',
+                    content: 'White Paper Release'
+                },
+                {
+                    date: 'January 15 2018',
+                    content: 'Lorem ipsum dolor'
+                },
+                {
+                    date: 'Q3 2018',
+                    content: 'Wallet & Miner'
+                },
+                {
+                    date: 'Q2 2018',
+                    content: 'ZeroNet & IPFS Integration'
+                },
+                {
+                    date: 'January 2018',
+                    content: 'GUI Wallet Release'
+                },
+                {
+                     date: 'Q4 2018',
+                    content: 'To Be Announced + Community Wishes'
+                },
+                {
+                    date: 'January 2018',
+                    content: 'White Paper Release'
+                },
+                {
+                    date: 'January 15 2018',
+                    content: 'Lorem ipsum dolor'
+                },
+                {
+                    date: 'Q3 2018',
+                    content: 'Wallet & Miner'
+                },
+                {
+                    date: 'Q2 2018',
+                    content: 'ZeroNet & IPFS Integration'
+                },
+                {
+                    date: 'January 2018',
+                    content: 'GUI Wallet Release'
+                },
+                {
+                     date: 'Q4 2018',
+                    content: 'To Be Announced + Community Wishes'
+                },
+            ];
+
+        $('#my-timeline').roadmap(events, {
+            eventsPerSlide: 6,
+            slide: 1,
+            nextArrow: '<i class="fa fa-angle-right"></i>',
+            prevArrow: '<i class="fa fa-angle-left"></i>'
+        });
+
+
+    });
+
+</script>
+<script type="text/javascript">
+     var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+</script>
+<script type="text/javascript">
+    // fixed navbar
+    $(document).on('scroll', function() {
+        var scrollPos = $(this).scrollTop();
+        if( scrollPos > 10 ) {
+            $('.fixed-top').addClass('navbar-home');
+            $('.navbar-brand >img').addClass('height_adjust');
+        }
+        else {
+            $('.fixed-top').removeClass('navbar-home');
+             $('.navbar-brand >img').removeClass('height_adjust');
+        }
+    });
+
+   
+        $(".single_angle-upicon").click(function () {
+            $('html, body').animate({
+                scrollTop: $(".up1").offset().top
+            }, 1000);
+        });
+
+             $(window).on('scroll', function() {
+        if ($(this).scrollTop() >= 50) {
+            $('#return-to-top').fadeIn(200);
+        } else {
+            $('#return-to-top').fadeOut(200);
+        }
+    });
+    $('#return-to-top').fadeOut().on('click', function() {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 1000);
+    });
+       
+</script>
+<script type="text/javascript">
+
+         wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 0,
+        mobile: true,
+        live: true
+    });
+    wow.init();
+
+    
+//search bar close icon start
+$('.search-toggler').click(function(){
+    $('.widget-holder').toggleClass(' show');
+    $('.input_adjust').val('');
+    $('.search-close').removeClass('display_cancel');
+});
+$(".input_adjust").keyup(function () {
+    $(".search-close").addClass("display_cancel");
+    if ($(".input_adjust").val().length == 0){
+        $(".search-close").removeClass("display_cancel");
+    }
+});
+$('.search-close').click(function () {
+    $('.input_adjust').val('');
+    $(this).removeClass('display_cancel');
+    $(".icon_search").css("display","block");
+});
+
+   $(window).on('load',function () {
+        $(".preloader").fadeOut();
+    });
+</script>
+</body>
+
+</html>
+
+
+

@@ -1,0 +1,47 @@
+
+
+  .bg-light {
+    background-color: transparent !important;
+  }
+
+
+  @media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 1.25rem;
+      padding-left: 1.25rem;
+    }
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #727e8a;
+    font-weight: 600;
+  }
+
+  .bg_startheader{
+    background-color: #141416;
+    padding: 30px;
+  }
+  .text_login{
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  .user{
+    color:#fff;
+    font-size:20px;
+  }
+  .arrow_right{
+    color: #ecb93d;
+    font-size: 20px;
+  }
+  .sign_text{
+    color: #ecb93d;
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+  }
+  .bg_colorsign{
+    background-color: #27272a;
+    padding:30px;
+  }
+

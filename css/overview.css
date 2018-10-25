@@ -1,0 +1,73 @@
+
+
+  .heading_text {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 45px;
+    color: #bfc6cd;
+  }
+  .headng_content {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    color: #bfc6cd;
+    line-height: 40px;
+    text-align:justify;
+  }
+
+  .spacing_top {
+
+    margin-top: 150px;
+  }
+
+  .image_backgrund{
+    background-color: #293543;
+    padding: 1.5rem 2rem;
+  }
+
+
+  .card {
+    background-color: #293543 !important;
+    border: none !important;
+    border-radius: 0 !important;
+  }
+  .title {
+
+    color: #bfc6cd;
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+  }
+
+  .content {
+    color: #6b7682;
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: justify;
+    line-height: 35px;
+  }
+  .btn_yellow {
+    background-color: #ecb93d;
+    padding: 18px 50px;
+    color: #161d24;
+    border: none;
+    outline: none;
+    /*letter-spacing: 3px;*/
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 14px;
+  }
+  .card-body {
+    padding: 3rem !important;
+    border-radius: 0 !important;
+  }
+  .card-title {
+    margin-bottom: 1rem !important;
+    margin-top: 2rem;
+  }
+
+  .padding_zero{
+    padding-left: 0 !important;
+    padding-right:0 !important;
+  }
+
+  .shadow_img{
+    box-shadow: 9px -1px 41px 4px #0b0b0c;
+  }

@@ -1,0 +1,109 @@
+
+  .heading_text {
+    font-family: 'Poiret One', cursive;
+    font-size: 45px;
+    color: #bfc6cd;
+  }
+
+  .headng_content {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    color: #bfc6cd;
+    line-height: 35px;
+    text-align: justify;
+  }
+  .bg_backgrnd{
+    background-color: #293543;
+    padding: 3rem;
+    margin-top: 10rem;
+    margin-left: 1.5rem;
+  }
+  .jyo_about
+  {
+    position: absolute;
+    top: 0;
+    left: 30%;
+  }
+  .adjust_top
+  {
+    position: relative;
+  }
+  .spacing_top1
+  {
+    padding-top: 25rem;
+  }
+  .image_backgrund{
+    background-color: #293543;
+    padding: 1.5rem 2rem;
+  }
+  .spacing_top{
+    margin-top: 150px;
+  }
+
+
+  .card {
+    background-color: #293543 !important;
+    border: none !important;
+    border-radius: 0 !important;
+  }
+  .title {
+
+    color: #bfc6cd;
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+  }
+
+  .content {
+    color: #6b7682;
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+    line-height: 35px;
+  }
+  .img_text{
+    position: relative;
+    top: -60%;
+  }
+
+  .adjust_top{
+    margin-top: -20rem;
+  }
+
+  @media(min-width:320px) and (max-width:767px){
+    .adjust_top{
+      margin-top: 0rem;
+    }
+    .bg_backgrnd {
+      background-color: #293543;
+      padding: 3rem;
+      margin-top: -4rem;
+      margin-left: 0rem;
+    }
+    .img_text {
+      position: relative;
+      top: -40%;
+    }
+    .jyo_about
+    {
+      position: relative;
+      left:0;
+      top:0;
+
+    }
+  }
+
+  @media(min-width:768px) and (max-width:991px){
+    .bg_backgrnd {
+      background-color: #293543;
+      padding: 3rem;
+      //margin-top: -10rem;
+      margin-left: 6.5rem;
+    }
+    .jyo_about
+    {
+      position: absolute;
+      top: 0;
+      left: 26%;
+    }
+  }
